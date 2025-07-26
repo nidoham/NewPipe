@@ -5,30 +5,28 @@
 </p>
 
 <h2 align="center"><strong>NewPipe</strong></h2>
-<h4 align="center">A free, open-source, and lightweight streaming front-end for Android</h4>
+<h4 align="center">A modern, lightweight, open-source streaming app for Android</h4>
 
 <p align="center">
-  <a href="https://newpipe.net/blog/pinned/announcement/newpipe-0.27.6-rewrite-team-states/#the-refactor"><strong>🚧 We are rewriting large parts of the codebase!</strong></a><br/>
-  <em>Please contribute new features to the <code>refactor</code> branch. The current codebase is in maintenance mode and only receives bugfixes.</em>
+  <a href="https://github.com/nidoham/NewPipe"><strong>🚀 Currently under active development and refactoring!</strong></a><br/>
+  <em>We're redesigning and improving performance, UX, and features. Contributions are welcome!</em>
 </p>
 
 <p align="center">
-  <a href="https://github.com/TeamNewPipe/NewPipe-refactor-nightly/releases"><strong>⬇️ Download refactor nightlies here</strong></a>
+  <a href="https://github.com/nidoham/NewPipe/releases"><strong>⬇️ No official version released yet — stay tuned!</strong></a>
+</p>
+
+<p align="center">
+  <a href="https://t.me/codewithni"><strong>📣 Join our Telegram for updates & help → t.me/codewithni</strong></a>
 </p>
 
 ---
 
 <p align="center">
-  <a href="https://f-droid.org/packages/org.schabi.newpipe/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-en.svg" alt="Get it on F-Droid" width="200"/></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/TeamNewPipe/NewPipe/releases"><img src="https://img.shields.io/github/release/TeamNewPipe/NewPipe.svg" alt="Stable Release"></a>
-  <a href="https://github.com/TeamNewPipe/NewPipe-nightly/releases"><img src="https://img.shields.io/github/release/TeamNewPipe/NewPipe-nightly.svg?labelColor=purple&label=dev%20nightly" alt="Nightly Release"></a>
-  <a href="https://github.com/TeamNewPipe/NewPipe-refactor-nightly/releases"><img src="https://img.shields.io/github/release/TeamNewPipe/NewPipe-refactor-nightly.svg?labelColor=purple&label=refactor%20nightly" alt="Refactor Nightly"></a>
-  <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="License"></a>
-  <a href="https://github.com/TeamNewPipe/NewPipe/actions"><img src="https://github.com/TeamNewPipe/NewPipe/actions/workflows/ci.yml/badge.svg?branch=dev&event=push" alt="Build Status"></a>
-  <a href="https://hosted.weblate.org/engage/newpipe/"><img src="https://hosted.weblate.org/widgets/newpipe/-/svg-badge.svg" alt="Translation Status"></a>
+  <img src="https://img.shields.io/github/views/nidoham/NewPipe?label=Repo%20Views&style=social" alt="Views">
+  <img src="https://img.shields.io/github/downloads/nidoham/NewPipe/total?label=Downloads&style=social" alt="Downloads">
+  <img src="https://img.shields.io/github/license/nidoham/NewPipe" alt="License">
+  <img src="https://img.shields.io/github/actions/workflow/status/nidoham/NewPipe/ci.yml?branch=main" alt="CI Status">
 </p>
 
 ---
@@ -47,79 +45,77 @@
 ## ✅ Supported Services
 
 * [YouTube](https://www.youtube.com/) & [YouTube Music](https://music.youtube.com/)
-* [PeerTube](https://joinpeertube.org/) and all instances
+* [PeerTube](https://joinpeertube.org/)
 * [Bandcamp](https://bandcamp.com/)
 * [SoundCloud](https://soundcloud.com/)
 * [media.ccc.de](https://media.ccc.de/)
 
-If you're passionate about a service, help us improve it or maintain support for it!
+More services to come — help us extend support!
 
 ---
 
 ## 🚀 Features
 
 * Watch videos in up to 4K
-* Audio-only mode & background playback
-* Popup player (Picture-in-Picture)
-* Live stream support
+* Audio-only & background playback
+* Popup (Picture-in-Picture) player
+* Livestream support
 * Subtitles & captions
-* Playlists (local & remote)
-* Subscriptions & channel groups (no account required!)
-* History, notifications, downloads
+* Download videos/audio
+* Channel subscriptions (no account needed)
+* History, bookmarks, and local playlists
 * Kodi integration
-* Age-restricted content support
+* Private by design — no tracking
 
 ---
 
 ## 📦 Installation
 
-We recommend using F-Droid with our custom repo:
+This version is still in active development. No stable builds are released yet.
 
-### 1. Via F-Droid (recommended)
+### 🔧 Build from Source
 
-👉 [Install via F-Droid repo](https://newpipe.net/FAQ/tutorials/install-add-fdroid-repo/)
+You can clone this repo and build debug APKs manually:
 
-### 2. GitHub APKs
+```bash
+git clone https://github.com/nidoham/NewPipe.git
+cd NewPipe
+./gradlew assembleDebug
+```
 
-📦 [Download APKs here](https://github.com/TeamNewPipe/NewPipe/releases)
-
-### 3. Self-built Debug APKs
-
-Fastest for testing but not signed for production.
-
-> ⚠️ **Do not publish NewPipe or forks on Google Play.** This violates their TOS.
+> ✅ Tip: Make sure `gradlew` is executable: `chmod +x ./gradlew`
 
 ---
 
-## 🛠️ Contribute
+## 👨‍💻 Contribute
 
-We welcome contributions of any kind: code, translations, design, ideas! Please read our [contribution guide](.github/CONTRIBUTING.md).
+We welcome contributions in any form — code, testing, translations, ideas!
 
-Help translate NewPipe on Weblate:
-[![Translation status](https://hosted.weblate.org/widgets/newpipe/-/287x66-grey.png)](https://hosted.weblate.org/engage/newpipe/)
-
----
-
-## 💖 Donate
-
-Support us on [Liberapay](https://liberapay.com/TeamNewPipe/):
-
-<p>
-  <a href="https://liberapay.com/TeamNewPipe/"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Liberapay_logo_v2_white-on-yellow.svg" width="80" /></a>
-  <a href="https://liberapay.com/TeamNewPipe/"><img src="assets/liberapay_qr_code.png" width="100"/></a>
-  <a href="https://liberapay.com/TeamNewPipe/donate"><img src="assets/liberapay_donate_button.svg" height="35"/></a>
-</p>
+* Report issues
+* Submit pull requests
+* Improve documentation
+* Help others on Telegram: [t.me/codewithni](https://t.me/codewithni)
 
 ---
 
-## 🔐 Privacy Policy
+## 📊 Analytics & Roadmap
 
-NewPipe respects your privacy. No tracking. No proprietary services. [Read our privacy policy](https://newpipe.net/legal/privacy/).
+* 📥 **GitHub Downloads**: ![Downloads](https://img.shields.io/github/downloads/nidoham/NewPipe/total?style=flat-square)
+* 👁️ **Views**: ![Views](https://img.shields.io/github/views/nidoham/NewPipe?style=flat-square)
+* 🧭 Feature roadmap coming soon in Issues & Projects tab
 
 ---
 
 ## 📜 License
 
-[![GPLv3](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.html)
+This project is licensed under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
 
-NewPipe is licensed under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html). Free to use, study, share, and improve!
+Free to use, study, share, and improve — forever.
+
+<p align="center">
+  <img src="https://www.gnu.org/graphics/gplv3-127x51.png" alt="GPLv3"/>
+</p>
+
+---
+
+<p align="center"><strong>Made with ❤️ by contributors & the community — join us!</strong></p>
