@@ -5,22 +5,20 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Circular background (Teal) -->
     <path
-        android:fillColor="#2D9B9B"
-        android:pathData="M54,0
-                         A54,54 0 1,0 54.01,0
-                         Z" />
+        android:fillColor="@android:color/transparent"
+        android:pathData="M24,11 H84 Q108,11 108,35 V73 Q108,97 84,97 H24 Q0,97 0,73 V35 Q0,11 24,11 Z" />
 
-    <!-- White circle inside -->
+    <!-- White rounded rectangle with 25% less width -->
     <path
-        android:fillColor="#F5F5F5"
-        android:pathData="M54,20
-                         A34,34 0 1,0 54.01,20
-                         Z" />
+        android:fillColor="#4B0082"
+        android:pathData="M32,28 H76 Q88,28 88,40 V68 Q88,80 76,80 H32 Q20,80 20,68 V40 Q20,28 32,28 Z" />
 
-    <!-- Purple play triangle centered -->
+    <!-- Triangle with white stroke and deep purple fill -->
     <path
-        android:fillColor="#6B46C1"
-        android:pathData="M47,40 L67,54 L47,68 Z" />
+        android:fillColor="#fafafa"
+        android:strokeColor="@android:color/white"
+        android:strokeWidth="2"
+        android:pathData="M43,41 L67,54 L43,67 Z" />
+
 </vector>
