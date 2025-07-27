@@ -32,9 +32,9 @@
         android:name=".App"
         android:allowBackup="true"
         android:banner="@mipmap/newpipe_tv_banner"
-        android:icon="@drawable/app_icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="NewPipe"
-        android:logo="@drawable/ic_launcher"
+        android:logo="@mipmap/ic_launcher"
         android:resizeableActivity="true"
         android:theme="@style/OpeningTheme"
         tools:ignore="AllowBackup">
