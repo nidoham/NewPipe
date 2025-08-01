@@ -11,7 +11,7 @@
          android:layout_height="match_parent"
          android:layout_width="match_parent"
          android:paddingBottom="?attr/actionBarSize"
-         android:id="@+id/vidmate_content_pager" />
+         android:id="@+id/content_page" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
          android:layout_height="wrap_content"
