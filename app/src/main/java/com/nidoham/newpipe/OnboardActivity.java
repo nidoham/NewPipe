@@ -31,7 +31,7 @@ public class OnboardActivity extends AppCompatActivity {
     }
     private void launchNextActivity(final boolean isNew) {
         if (isNew) {
-            intent.setClass(getApplicationContext(), MainActivity.class);
+            intent.setClass(getApplicationContext(), HomeActivity.class);
         } else {
             intent.setClass(getApplicationContext(), MainActivity.class);
         }

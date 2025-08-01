@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/NewPipe/app/src/main/res/layout/activity_home.xml",
+      "selection": {
+        "end": {
+          "column": 54,
+          "index": 1232,
+          "line": 28
+        },
+        "start": {
+          "column": 54,
+          "index": 1232,
+          "line": 28
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/NewPipe/app/src/main/res/layout/activity_home.xml"
+}

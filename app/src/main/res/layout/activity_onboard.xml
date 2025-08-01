@@ -1,141 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
      xmlns:android="http://schemas.android.com/apk/res/android"
      xmlns:app="http://schemas.android.com/apk/res-auto"
      xmlns:tools="http://schemas.android.com/tools"
      android:layout_height="match_parent"
      android:layout_width="match_parent"
-     android:gravity="center"
-     android:padding="10dp"
-     android:orientation="vertical">
+     android:fillViewport="true">
 
     <LinearLayout
          android:layout_height="wrap_content"
          android:layout_width="match_parent"
-         android:gravity="center">
+         android:gravity="center"
+         android:padding="24dp"
+         android:orientation="vertical">
 
-        <ImageView
+        <LinearLayout
              android:layout_height="wrap_content"
-             android:layout_width="wrap_content"
-             android:src="@mipmap/ic_launcher"
-             android:layout_margin="20dp" />
+             android:layout_width="match_parent"
+             android:layout_marginBottom="32dp"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <ImageView
+                 android:layout_height="72dp"
+                 android:layout_width="72dp"
+                 android:layout_marginBottom="24dp"
+                 android:src="@mipmap/ic_launcher"
+                 android:contentDescription="@string/app_name" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="8dp"
+                 android:gravity="center"
+                 android:textSize="32sp"
+                 android:fontFamily="sans-serif-medium"
+                 android:textColor="?android:attr/textColorPrimary"
+                 android:id="@+id/text_title"
+                 android:text="Choose Your Experience"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:alpha="0.8"
+                 android:textSize="16sp"
+                 android:textColor="?android:attr/textColorSecondary"
+                 android:lineSpacingExtra="4dp"
+                 android:id="@+id/text_subtitle"
+                 android:text="Select the interface that suits your preference.\nYou can change this later in settings." />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_weight="1">
+
+            <com.google.android.material.card.MaterialCardView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="20dp"
+                 android:clickable="true"
+                 app:strokeColor="#007AFF"
+                 app:cardElevation="8dp"
+                 app:strokeWidth="2dp"
+                 app:cardBackgroundColor="?attr/colorSurface"
+                 app:cardCornerRadius="20dp"
+                 android:focusable="true"
+                 android:id="@+id/card_new_ui"
+                 android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="20dp"
+                     android:orientation="vertical">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:layout_marginBottom="16dp"
+                         android:orientation="horizontal">
+
+                        <View
+                             android:layout_height="0dp"
+                             android:layout_width="0dp"
+                             android:layout_weight="1" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:background="@drawable/recommended_bg"
+                             android:paddingVertical="6dp"
+                             android:textSize="12sp"
+                             android:textColor="#007AFF"
+                             android:paddingHorizontal="16dp"
+                             android:letterSpacing="0.05"
+                             android:id="@+id/text_recommended"
+                             android:text="RECOMMENDED"
+                             android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                         android:layout_height="140dp"
+                         android:layout_width="match_parent"
+                         android:layout_marginBottom="20dp"
+                         android:src="@drawable/ic_features_new"
+                         android:scaleType="fitCenter"
+                         android:contentDescription="@string/new_ui_preview"
+                         android:id="@+id/image_new_ui" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:layout_marginBottom="8dp"
+                         android:textSize="22sp"
+                         android:fontFamily="sans-serif-medium"
+                         android:textColor="?android:attr/textColorPrimary"
+                         android:id="@+id/text_new_ui_title"
+                         android:text="Modern Interface"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:alpha="0.8"
+                         android:textSize="14sp"
+                         android:textColor="?android:attr/textColorSecondary"
+                         android:lineSpacingExtra="2dp"
+                         android:text="Enhanced user experience with modern design principles, improved navigation, and better accessibility features." />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:clickable="true"
+                 app:strokeColor="?attr/colorOutline"
+                 app:cardElevation="4dp"
+                 app:strokeWidth="1dp"
+                 app:cardBackgroundColor="?attr/colorSurface"
+                 app:cardCornerRadius="20dp"
+                 android:focusable="true"
+                 android:id="@+id/card_old_ui"
+                 android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="20dp"
+                     android:orientation="vertical">
+
+                    <ImageView
+                         android:layout_height="140dp"
+                         android:layout_width="match_parent"
+                         android:layout_marginBottom="20dp"
+                         android:src="@drawable/ic_features_old"
+                         android:scaleType="fitCenter"
+                         android:contentDescription="@string/old_ui_preview"
+                         android:id="@+id/image_old_ui" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:layout_marginBottom="8dp"
+                         android:textSize="22sp"
+                         android:fontFamily="sans-serif-medium"
+                         android:textColor="?android:attr/textColorPrimary"
+                         android:id="@+id/text_old_ui_title"
+                         android:text="Classic Interface"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:alpha="0.8"
+                         android:textSize="14sp"
+                         android:textColor="?android:attr/textColorSecondary"
+                         android:lineSpacingExtra="2dp"
+                         android:text="Traditional interface that you're familiar with. Stable and reliable with all core features intact." />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <View
+             android:layout_height="24dp"
+             android:layout_width="match_parent" />
 
     </LinearLayout>
 
-    <TextView
-         android:layout_height="wrap_content"
-         android:layout_width="match_parent"
-         android:layout_marginBottom="16dp"
-         android:gravity="center"
-         android:textSize="28sp"
-         android:id="@+id/text_title"
-         android:layout_gravity="center_horizontal"
-         android:text="Choose Your Experience"
-         android:textStyle="bold" />
-
-    <TextView
-         android:layout_height="wrap_content"
-         android:layout_width="match_parent"
-         android:layout_marginBottom="40dp"
-         android:gravity="center"
-         android:textAlignment="center"
-         android:textSize="16sp"
-         android:id="@+id/text_subtitle"
-         android:text="Select the interface that you prefer." />
-
-    <com.google.android.material.card.MaterialCardView
-         android:layout_height="wrap_content"
-         android:layout_width="match_parent"
-         android:layout_marginBottom="16dp"
-         android:clickable="true"
-         app:strokeColor="#007AFF"
-         app:cardElevation="4dp"
-         app:strokeWidth="2dp"
-         app:cardCornerRadius="16dp"
-         android:focusable="true"
-         android:id="@+id/card_new_ui">
-
-        <RelativeLayout
-             android:layout_height="match_parent"
-             android:layout_width="match_parent"
-             android:padding="16dp">
-
-            <ImageView
-                 android:layout_height="120dp"
-                 android:layout_width="match_parent"
-                 android:scaleType="fitCenter"
-                 android:src="@drawable/ic_features_new"
-                 android:contentDescription="@string/new_ui_preview"
-                 android:id="@+id/image_new_ui" />
-
-            <TextView
-                 android:layout_height="wrap_content"
-                 android:layout_width="wrap_content"
-                 android:layout_below="@id/image_new_ui"
-                 android:textSize="18sp"
-                 android:layout_marginTop="12dp"
-                 android:layout_alignParentStart="true"
-                 android:id="@+id/text_new_ui_title"
-                 android:text="New UI/UX"
-                 android:textStyle="bold" />
-
-            <TextView
-                 android:layout_height="wrap_content"
-                 android:layout_width="wrap_content"
-                 android:layout_alignParentEnd="true"
-                 android:textSize="14sp"
-                 android:textColor="#007AFF"
-                 android:paddingStart="12dp"
-                 android:layout_marginTop="12dp"
-                 android:layout_below="@id/image_new_ui"
-                 android:paddingEnd="12dp"
-                 android:background="@drawable/recommended_bg"
-                 android:paddingBottom="4dp"
-                 android:id="@+id/text_recommended"
-                 android:text="Recommended"
-                 android:textStyle="bold"
-                 android:paddingTop="4dp" />
-
-        </RelativeLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-         android:layout_height="wrap_content"
-         android:layout_width="match_parent"
-         android:clickable="true"
-         app:cardElevation="4dp"
-         app:strokeWidth="1dp"
-         app:cardCornerRadius="16dp"
-         android:focusable="true"
-         android:id="@+id/card_old_ui">
-
-        <RelativeLayout
-             android:layout_height="match_parent"
-             android:layout_width="match_parent"
-             android:padding="16dp">
-
-            <ImageView
-                 android:layout_height="120dp"
-                 android:layout_width="match_parent"
-                 android:scaleType="fitCenter"
-                 android:src="@drawable/ic_features_old"
-                 android:contentDescription="@string/old_ui_preview"
-                 android:id="@+id/image_old_ui" />
-
-            <TextView
-                 android:layout_height="wrap_content"
-                 android:layout_width="wrap_content"
-                 android:layout_below="@id/image_old_ui"
-                 android:textSize="18sp"
-                 android:layout_marginTop="12dp"
-                 android:layout_alignParentStart="true"
-                 android:id="@+id/text_old_ui_title"
-                 android:text="Old UI/UX"
-                 android:textStyle="bold" />
-
-        </RelativeLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-</LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:fitsSystemWindows="true">
+
+    <androidx.viewpager2.widget.ViewPager2
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:paddingBottom="?attr/actionBarSize"
+         android:id="@+id/vidmate_content_pager" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:background="@android:color/transparent"
+         app:itemTextColor="@color/contrastColor"
+         app:labelVisibilityMode="labeled"
+         app:menu="@menu/bottom_navigation"
+         app:itemIconTint="@color/contrastColor"
+         app:elevation="8dp"
+         app:itemIconSize="24dp"
+         android:id="@+id/bottom_nav"
+         android:layout_gravity="bottom" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
