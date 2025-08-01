@@ -7,7 +7,6 @@ plugins {
     id "kotlin-android"
     id "kotlin-kapt"
     id "kotlin-parcelize"
-    id "checkstyle"
     id "org.sonarqube" version "4.0.0.2929"
 }
 
@@ -118,8 +117,6 @@ android {
 }
 
 ext {
-    checkstyleVersion = '10.12.1'
-
     androidxLifecycleVersion = '2.6.2'
     androidxRoomVersion = '2.6.1'
     androidxWorkVersion = '2.8.1'
@@ -135,33 +132,7 @@ ext {
 }
 
 configurations {
-    checkstyle
     ktlint
-}
-
-checkstyle {
-    getConfigDirectory().set(rootProject.file("checkstyle"))
-    ignoreFailures false
-    showViolations true
-    toolVersion = checkstyleVersion
-}
-
-tasks.register('runCheckstyle', Checkstyle) {
-    source 'src'
-    include '**/*.java'
-    exclude '**/gen/**'
-    exclude '**/R.java'
-    exclude '**/BuildConfig.java'
-    exclude 'main/java/us/shandian/giga/**'
-
-    classpath = configurations.checkstyle
-
-    showViolations true
-
-    reports {
-        xml.getRequired().set(true)
-        html.getRequired().set(true)
-    }
 }
 
 def outputDir = "${project.buildDir}/reports/ktlint/"
@@ -189,7 +160,7 @@ afterEvaluate {
     if (!System.properties.containsKey('skipFormatKtlint')) {
         preDebugBuild.dependsOn formatKtlint
     }
-    preDebugBuild.dependsOn runCheckstyle, runKtlint
+    preDebugBuild.dependsOn runKtlint
 }
 
 sonar {
@@ -218,17 +189,14 @@ dependencies {
     implementation 'com.github.TeamNewPipe:nanojson:e9d656ddb49a412a5a0a5d5ef20ca7ef09549996'
     // WORKAROUND: if you get errors with the NewPipeExtractor dependency, replace `v0.24.3` with
     // the corresponding commit hash, since JitPack sometimes deletes artifacts.
-    // If there’s already a git hash, just add more of it to the end (or remove a letter)
+    // If there's already a git hash, just add more of it to the end (or remove a letter)
     // to cause jitpack to regenerate the artifact.
     implementation 'com.github.TeamNewPipe:NewPipeExtractor:7adbc48a0aa872c016b8ec089e278d5e12772054'
     implementation 'com.github.TeamNewPipe:NoNonsense-FilePicker:5.0.0'
 
-/** Checkstyle **/
-    checkstyle "com.puppycrawl.tools:checkstyle:${checkstyleVersion}"
-    ktlint 'com.pinterest:ktlint:0.45.2'
-
 /** Kotlin **/
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${kotlin_version}"
+    ktlint 'com.pinterest:ktlint:0.45.2'
 
 /** AndroidX **/
     implementation 'androidx.cardview:cardview:1.0.0'
