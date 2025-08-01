@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Onboarding Screen -->
+    <string name="choose_your_experience">Choose Your Experience</string>
+    <string name="select_preferred_interface">Select the interface that best suits your preferences and workflow.</string>
+    
+    <!-- Modern Interface Option -->
+    <string name="modern_interface">Modern Interface</string>
+    <string name="modern_interface_description">Enhanced design with latest features and improved user experience</string>
+    <string name="modern_interface_icon">Modern interface icon</string>
+    <string name="recommended">Recommended</string>
+    
+    <!-- Classic Interface Option -->
+    <string name="classic_interface">Classic Interface</string>
+    <string name="classic_interface_description">Familiar design with traditional layout and functionality</string>
+    <string name="classic_interface_icon">Classic interface icon</string>
+    
+    <!-- Accessibility -->
+    <string name="select_interface_option">Select interface option</string>
+    <string name="modern_interface_selected">Modern interface selected</string>
+    <string name="classic_interface_selected">Classic interface selected</string>
+    
+    <!-- Navigation -->
+    <string name="continue_button">Continue</string>
+    <string name="back_button">Back</string>
+    <string name="skip_button">Skip</string>
+    
+    <!-- Toast Messages -->
+    <string name="interface_selection_required">Please select an interface to continue</string>
+    <string name="modern_interface_enabled">Modern interface enabled successfully</string>
+    <string name="classic_interface_enabled">Classic interface enabled successfully</string>
+    
+    <!-- Content Descriptions -->
+    <string name="onboarding_card_content_description">Interface selection card</string>
+    <string name="recommended_chip_content_description">Recommended option indicator</string>
+
+</resources>
