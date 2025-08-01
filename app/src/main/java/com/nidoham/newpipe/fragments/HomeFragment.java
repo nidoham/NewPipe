@@ -37,13 +37,13 @@ public class HomeFragment extends Fragment {
     
     private void setupViewPager() {
         tabAdapter = new HomeTabAdapter(getActivity());
-        binding.viewPager.setAdapter(tabAdapter);
-        binding.viewPager.setOffscreenPageLimit(1); // Keep both fragments in memory
-        binding.viewPager.setUserInputEnabled(false);
+        binding.contentPager.setAdapter(tabAdapter);
+        binding.contentPager.setOffscreenPageLimit(1); // Keep both fragments in memory
+        binding.contentPager.setUserInputEnabled(false);
     }
     
     private void setupTabLayout() {
-        new TabLayoutMediator(binding.tabLayout, binding.viewPager, (tab, position) -> {
+        new TabLayoutMediator(binding.tabLayout, binding.contentPager, (tab, position) -> {
             switch (position) {
                 case 0:
                     tab.setText("Trending");

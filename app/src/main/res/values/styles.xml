@@ -1,5 +1,10 @@
 <resources>
 
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item> <!-- আপনি আপনার পছন্দ অনুযায়ী সাইজ দিন -->
+    </style>
+
+
     <!-- Opening Theme -->
     <style name="Base.V21.OpeningTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@android:color/transparent</item>

@@ -1,20 +1,35 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/NewPipe/app/src/main/java/com/nidoham/newpipe/fragment/TrendingFragment.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/NewPipe/app/src/main/res/layout/fragment_home.xml",
       "selection": {
         "end": {
-          "column": 42,
-          "index": 788,
-          "line": 22
+          "column": 41,
+          "index": 1165,
+          "line": 26
         },
         "start": {
-          "column": 42,
-          "index": 788,
-          "line": 22
+          "column": 41,
+          "index": 1165,
+          "line": 26
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/NewPipe/app/src/main/res/values/styles.xml",
+      "selection": {
+        "end": {
+          "column": 40,
+          "index": 121,
+          "line": 3
+        },
+        "start": {
+          "column": 40,
+          "index": 121,
+          "line": 3
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/NewPipe/app/src/main/java/com/nidoham/newpipe/fragment/TrendingFragment.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/NewPipe/app/src/main/res/values/styles.xml"
 }
